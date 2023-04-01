@@ -15,7 +15,7 @@ final class RegionsCollectionViewController: UICollectionViewController {
     private let regions = Regions.allCases
     override func viewDidLoad() {
         super.viewDidLoad()
-        let countries = networkManager.getData(for: .Asia)
+        let countries = networkManager.getData(for: .Worldwide)
         print(countries)
     }
 
