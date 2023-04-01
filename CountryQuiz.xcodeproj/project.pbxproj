@@ -15,6 +15,9 @@
 		8030CC5C29D7FD0A0096FCA2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030CC5B29D7FD0A0096FCA2 /* TabBarController.swift */; };
 		8030CC5E29D80B5E0096FCA2 /* RegionsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030CC5D29D80B5E0096FCA2 /* RegionsCollectionViewController.swift */; };
 		8030CC6029D80BB80096FCA2 /* RegionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030CC5F29D80BB80096FCA2 /* RegionListViewController.swift */; };
+		8030CC6229D80E1D0096FCA2 /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030CC6129D80E1D0096FCA2 /* RecordListViewController.swift */; };
+		8030CC6429D80E540096FCA2 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030CC6329D80E540096FCA2 /* QuizViewController.swift */; };
+		8030CC6629D80E7D0096FCA2 /* CountryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030CC6529D80E7D0096FCA2 /* CountryInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		8030CC5B29D7FD0A0096FCA2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8030CC5D29D80B5E0096FCA2 /* RegionsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsCollectionViewController.swift; sourceTree = "<group>"; };
 		8030CC5F29D80BB80096FCA2 /* RegionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionListViewController.swift; sourceTree = "<group>"; };
+		8030CC6129D80E1D0096FCA2 /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
+		8030CC6329D80E540096FCA2 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		8030CC6529D80E7D0096FCA2 /* CountryInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 				8030CC5B29D7FD0A0096FCA2 /* TabBarController.swift */,
 				8030CC5D29D80B5E0096FCA2 /* RegionsCollectionViewController.swift */,
 				8030CC5F29D80BB80096FCA2 /* RegionListViewController.swift */,
+				8030CC6129D80E1D0096FCA2 /* RecordListViewController.swift */,
+				8030CC6329D80E540096FCA2 /* QuizViewController.swift */,
+				8030CC6529D80E7D0096FCA2 /* CountryInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -177,6 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8030CC5C29D7FD0A0096FCA2 /* TabBarController.swift in Sources */,
+				8030CC6629D80E7D0096FCA2 /* CountryInfoViewController.swift in Sources */,
+				8030CC6429D80E540096FCA2 /* QuizViewController.swift in Sources */,
+				8030CC6229D80E1D0096FCA2 /* RecordListViewController.swift in Sources */,
 				8030CC4429D7F9AE0096FCA2 /* AppDelegate.swift in Sources */,
 				8030CC6029D80BB80096FCA2 /* RegionListViewController.swift in Sources */,
 				8030CC5E29D80B5E0096FCA2 /* RegionsCollectionViewController.swift in Sources */,
