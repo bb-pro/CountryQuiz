@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		802A360B29D81862001E9EC6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A360A29D81862001E9EC6 /* NetworkManager.swift */; };
 		802A360E29D81876001E9EC6 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A360D29D81876001E9EC6 /* Country.swift */; };
-		802A361129D820B8001E9EC6 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = 802A361029D820B7001E9EC6 /* all.json */; };
 		8030CC4429D7F9AE0096FCA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030CC4329D7F9AE0096FCA2 /* AppDelegate.swift */; };
 		8030CC4629D7F9AE0096FCA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030CC4529D7F9AE0096FCA2 /* SceneDelegate.swift */; };
 		8030CC4B29D7F9AE0096FCA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8030CC4929D7F9AE0096FCA2 /* Main.storyboard */; };
@@ -282,7 +281,7 @@
 /* Begin PBXFileReference section */
 		802A360A29D81862001E9EC6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		802A360D29D81876001E9EC6 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
-		802A361029D820B7001E9EC6 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = all.json; path = ../../../../../.Trash/all.json; sourceTree = "<group>"; };
+		802A361329D82958001E9EC6 /* all.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
 		8030CC4029D7F9AE0096FCA2 /* CountryQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8030CC4329D7F9AE0096FCA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8030CC4529D7F9AE0096FCA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -592,7 +591,6 @@
 		8030CC4229D7F9AE0096FCA2 /* CountryQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				802A361029D820B7001E9EC6 /* all.json */,
 				802A360C29D81867001E9EC6 /* Models */,
 				8030D36129D814F20096FCA2 /* Views */,
 				8030CC6A29D8128C0096FCA2 /* Services */,
@@ -650,6 +648,7 @@
 		8030CC6729D812690096FCA2 /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
+				802A361329D82958001E9EC6 /* all.json */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -1001,7 +1000,6 @@
 				8030D29F29D813EF0096FCA2 /* bo.png in Resources */,
 				8030D2D529D813EF0096FCA2 /* sr.png in Resources */,
 				8030D34D29D813F00096FCA2 /* va.png in Resources */,
-				802A361129D820B8001E9EC6 /* all.json in Resources */,
 				8030D31229D813F00096FCA2 /* gb-eng.png in Resources */,
 				8030D35C29D813F00096FCA2 /* za.png in Resources */,
 				8030D35F29D813F00096FCA2 /* vu.png in Resources */,

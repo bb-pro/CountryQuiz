@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="se9-Gs-mNA">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -33,7 +33,7 @@
             <objects>
                 <collectionViewController id="Q1y-xX-bTB" customClass="RegionsCollectionViewController" customModule="CountryQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="LKC-aY-jgr">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="spO-4z-rX0">
@@ -44,7 +44,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="region" id="d57-gz-wa7" customClass="RegionsCollectionViewCell" customModule="CountryQuiz" customModuleProvider="target">
-                                <rect key="frame" x="20" y="20" width="160" height="260"/>
+                                <rect key="frame" x="80" y="20" width="160" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="160" height="260"/>
@@ -94,15 +94,15 @@
             <objects>
                 <tableViewController id="alJ-lS-BN0" customClass="RegionListViewController" customModule="CountryQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="6uu-fn-1gz">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="I4K-yM-Rqv">
-                                <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I4K-yM-Rqv" id="BLe-L4-Eub">
-                                    <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -126,7 +126,7 @@
             <objects>
                 <viewController id="fbg-jY-gv9" customClass="CountryInfoViewController" customModule="CountryQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uUJ-Tq-CFX">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="uFd-64-0gt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -142,35 +142,35 @@
             <objects>
                 <viewController id="Ikz-e5-bBi" customClass="QuizViewController" customModule="CountryQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z1W-ZL-Cta">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="hUC-29-DM0">
-                                <rect key="frame" x="50" y="153" width="330" height="646"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hUC-29-DM0">
+                                <rect key="frame" x="50" y="94" width="220" height="375"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uz.png" translatesAutoresizingMaskIntoConstraints="NO" id="ysz-Ac-XcE">
-                                        <rect key="frame" x="0.0" y="0.0" width="330" height="298"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="230"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="RAv-su-cTI">
-                                        <rect key="frame" x="127.66666666666666" y="348" width="75" height="298"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RAv-su-cTI">
+                                        <rect key="frame" x="72.5" y="250" width="75" height="125"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGQ-hG-EEl">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="52.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="16"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6s-X3-KDs">
-                                                <rect key="frame" x="0.0" y="81.666666666666629" width="75" height="53"/>
+                                                <rect key="frame" x="0.0" y="36" width="75" height="16.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKs-i2-WqC">
-                                                <rect key="frame" x="0.0" y="163.66666666666663" width="75" height="52.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="72.5" width="75" height="16"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PX-Xo-t7F">
-                                                <rect key="frame" x="0.0" y="245.33333333333334" width="75" height="52.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="108.5" width="75" height="16.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                             </button>
@@ -183,6 +183,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hUC-29-DM0" firstAttribute="top" secondItem="ePV-Zs-8il" secondAttribute="top" constant="50" id="9IE-SB-wzZ"/>
+                            <constraint firstItem="ysz-Ac-XcE" firstAttribute="height" secondItem="z1W-ZL-Cta" secondAttribute="height" multiplier="0.404506" id="MG8-7J-qjd"/>
                             <constraint firstItem="ePV-Zs-8il" firstAttribute="trailing" secondItem="hUC-29-DM0" secondAttribute="trailing" constant="50" id="ONh-9X-P4R"/>
                             <constraint firstItem="ePV-Zs-8il" firstAttribute="bottom" secondItem="hUC-29-DM0" secondAttribute="bottom" constant="50" id="kp5-J2-kdq"/>
                             <constraint firstItem="hUC-29-DM0" firstAttribute="leading" secondItem="ePV-Zs-8il" secondAttribute="leading" constant="50" id="wlt-Mu-uLx"/>
@@ -192,22 +193,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9sm-5i-Ad0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2463" y="-1011"/>
+            <point key="canvasLocation" x="2462.7906976744184" y="-1011.37339055794"/>
         </scene>
         <!--Records-->
         <scene sceneID="iEU-2p-Ouy">
             <objects>
                 <tableViewController id="3bb-c8-jwo" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="bBs-ZX-olX">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="NUI-CW-8Ha">
-                                <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NUI-CW-8Ha" id="304-En-L4j">
-                                    <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -230,7 +231,7 @@
                     <tabBarItem key="tabBarItem" title="Guess the Flag" image="globe.central.south.asia" catalog="system" id="Cnl-9m-GTy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NR6-eN-wag">
-                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -249,7 +250,7 @@
                     <tabBarItem key="tabBarItem" title="Countries" image="flag" catalog="system" id="Nwc-oe-4t9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GKO-E2-TVe">
-                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
