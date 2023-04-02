@@ -36,7 +36,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="LKC-aY-jgr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="spO-4z-rX0">
                             <size key="itemSize" width="160" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -140,7 +140,7 @@
             </objects>
             <point key="canvasLocation" x="2462" y="-270"/>
         </scene>
-        <!--Quiz View Controller-->
+        <!--Guess the Flag-->
         <scene sceneID="nc2-RI-nqf">
             <objects>
                 <viewController id="Ikz-e5-bBi" customClass="QuizViewController" customModule="CountryQuiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -148,7 +148,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="475.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hUC-29-DM0">
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hUC-29-DM0">
                                 <rect key="frame" x="50" y="50" width="220" height="326.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uz.png" translatesAutoresizingMaskIntoConstraints="NO" id="ysz-Ac-XcE">
@@ -159,6 +159,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGQ-hG-EEl">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="23.5"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
@@ -167,6 +168,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6s-X3-KDs">
                                                 <rect key="frame" x="0.0" y="33.5" width="220" height="23.5"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
@@ -175,6 +177,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKs-i2-WqC">
                                                 <rect key="frame" x="0.0" y="67" width="220" height="23.5"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
@@ -183,6 +186,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PX-Xo-t7F">
                                                 <rect key="frame" x="0.0" y="100.5" width="220" height="23.5"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
@@ -194,12 +198,12 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="RAv-su-cTI" secondAttribute="trailing" id="eAU-pv-uaL"/>
-                                    <constraint firstItem="RAv-su-cTI" firstAttribute="leading" secondItem="hUC-29-DM0" secondAttribute="leading" id="mXU-g4-Idj"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ePV-Zs-8il"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="hUC-29-DM0" firstAttribute="top" secondItem="ePV-Zs-8il" secondAttribute="top" constant="50" id="9IE-SB-wzZ"/>
                             <constraint firstItem="ysz-Ac-XcE" firstAttribute="height" secondItem="z1W-ZL-Cta" secondAttribute="height" multiplier="0.404506" id="MG8-7J-qjd"/>
@@ -208,7 +212,7 @@
                             <constraint firstItem="hUC-29-DM0" firstAttribute="leading" secondItem="ePV-Zs-8il" secondAttribute="leading" constant="50" id="wlt-Mu-uLx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ifb-ly-UkU"/>
+                    <navigationItem key="navigationItem" title="Guess the Flag" id="ifb-ly-UkU"/>
                     <connections>
                         <outlet property="imageView" destination="ysz-Ac-XcE" id="kM7-im-k9O"/>
                         <outletCollection property="flagButtons" destination="HGQ-hG-EEl" collectionClass="NSMutableArray" id="G1o-qQ-W60"/>
@@ -303,6 +307,9 @@
         <image name="uz.png" width="2560" height="1280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
