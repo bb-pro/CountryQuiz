@@ -34,3 +34,8 @@ struct Country: Codable {
         case intermediateRegionCode = "intermediate-region-code"
     }
 }
+
+struct Flag {
+    let name: String
+    let code: String
+}

@@ -275,7 +275,6 @@
 		8030D35F29D813F00096FCA2 /* vu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8030D26129D813EF0096FCA2 /* vu.png */; };
 		8030D36029D813F00096FCA2 /* tj.png in Resources */ = {isa = PBXBuildFile; fileRef = 8030D26229D813EF0096FCA2 /* tj.png */; };
 		8030D36329D8151F0096FCA2 /* RegionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030D36229D8151F0096FCA2 /* RegionsCollectionViewCell.swift */; };
-		8030D36529D816EB0096FCA2 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030D36429D816EB0096FCA2 /* CollectionViewController.swift */; };
 		80F9A17C29D84620009DA625 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = 80F9A17B29D84620009DA625 /* all.json */; };
 /* End PBXBuildFile section */
 
@@ -550,7 +549,6 @@
 		8030D26129D813EF0096FCA2 /* vu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vu.png; sourceTree = "<group>"; };
 		8030D26229D813EF0096FCA2 /* tj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tj.png; sourceTree = "<group>"; };
 		8030D36229D8151F0096FCA2 /* RegionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsCollectionViewCell.swift; sourceTree = "<group>"; };
-		8030D36429D816EB0096FCA2 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		80F9A17B29D84620009DA625 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = all.json; path = ../../../../../../.Trash/all.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -641,7 +639,6 @@
 				8030CC5F29D80BB80096FCA2 /* RegionListViewController.swift */,
 				8030CC6129D80E1D0096FCA2 /* RecordListViewController.swift */,
 				8030CC6529D80E7D0096FCA2 /* CountryInfoViewController.swift */,
-				8030D36429D816EB0096FCA2 /* CollectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1263,7 +1260,6 @@
 				8030CC6429D80E540096FCA2 /* QuizViewController.swift in Sources */,
 				8030CC6229D80E1D0096FCA2 /* RecordListViewController.swift in Sources */,
 				802A360B29D81862001E9EC6 /* NetworkManager.swift in Sources */,
-				8030D36529D816EB0096FCA2 /* CollectionViewController.swift in Sources */,
 				8030D36329D8151F0096FCA2 /* RegionsCollectionViewCell.swift in Sources */,
 				802A360E29D81876001E9EC6 /* Country.swift in Sources */,
 				8030CC4429D7F9AE0096FCA2 /* AppDelegate.swift in Sources */,
