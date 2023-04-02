@@ -25,9 +25,9 @@ final class NetworkManager {
         if let path = Bundle.main.path(forResource: "all", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                print(data.count)
+       
                 let countries = try JSONDecoder().decode([Country].self, from: data)
-                print(countries.count)
+                
                 switch region {
                 case .Asia:
                     countries.forEach { country in
