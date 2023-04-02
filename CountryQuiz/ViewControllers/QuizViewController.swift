@@ -11,39 +11,57 @@ final class QuizViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var flagButtons: [UIButton]!
     var countries: [Country]!
-    private var answerOptions: [Country] = []
+
+    private var correctFlag = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("\(countries) quiz info screen")
         updateUI()
     }
-
+    
+    @IBAction func answerButtonPressed(_ sender: UIButton) {
+        checkAnswer(for: sender)
+        Timer.scheduledTimer(timeInterval: 0.6, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
+    }
+    
 }
 
 //MARK: - Private Methods
 private extension QuizViewController {
-    func updateUI() {
+    @objc func updateUI() {
+        var answerOptions: [Country] = []
+        //Getting random country data to display on the screen
         
         for _ in 1...4 {
-            if let country = countries.randomElement() {
-                print(country)
-                answerOptions.append(country)
+            answerOptions.append(countries.randomElement()!)
             }
-        }
         
-        for (country, button) in zip(answerOptions, flagButtons) {
+        for (button, country) in zip(flagButtons, answerOptions.shuffled()) {
             button.setTitle(country.name, for: .normal)
         }
-        if let correctAnswer = answerOptions.randomElement() {
-            imageView.image = UIImage(named: correctAnswer.alpha2Code.lowercased())
-        }
+        
+        guard let correctAnswer = answerOptions.randomElement() else { return }
+        imageView.image = UIImage(named: correctAnswer.alpha2Code.lowercased())
+        correctFlag = correctAnswer.name
+        
         setButtons()
+        
     }
-    
+    //updating button data and image
     func setButtons() {
         flagButtons.forEach { button in
             button.layer.cornerRadius = 10
             button.backgroundColor = .lightGray
+        }
+    }
+    
+    func checkAnswer(for sender: UIButton) {
+        if let buttonTitle = sender.title(for: .selected) {
+            if correctFlag == buttonTitle {
+                sender.backgroundColor = .green
+            } else {
+                sender.backgroundColor = .red
+            }
         }
     }
 }
