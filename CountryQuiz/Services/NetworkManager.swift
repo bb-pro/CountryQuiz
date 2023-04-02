@@ -27,7 +27,7 @@ final class NetworkManager {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 print(data.count)
                 let countries = try JSONDecoder().decode([Country].self, from: data)
-                print(countries)
+                print(countries.count)
                 switch region {
                 case .Asia:
                     countries.forEach { country in

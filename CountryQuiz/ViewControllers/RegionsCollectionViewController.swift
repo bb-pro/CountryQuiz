@@ -13,10 +13,15 @@ final class RegionsCollectionViewController: UICollectionViewController {
     private let reuseIdentifier = "region"
     private let networkManager = NetworkManager.shared
     private let regions = Regions.allCases
+    private var sortedCountries: [Country]!
+    
+    //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        let countries = networkManager.getData(for: .Worldwide)
-        print(countries)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let quizVC = segue.destination as? QuizViewController else { return }
+        quizVC.countries = sortedCountries
     }
 
 }
@@ -45,5 +50,20 @@ extension RegionsCollectionViewController {
         cell.countryName.text = region.rawValue
     
         return cell
+    }
+}
+//MARK: - UICollectionViewDelegate
+extension RegionsCollectionViewController {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("IndexPath item \(indexPath.item)")
+        switch indexPath.item {
+        case 0: sortedCountries = networkManager.getData(for: .Asia)
+        case 1: sortedCountries = networkManager.getData(for: .Americas)
+        case 2: sortedCountries = networkManager.getData(for: .Europe)
+        case 3: sortedCountries = networkManager.getData(for: .Africa)
+        default:
+            sortedCountries = networkManager.getData(for: .Worldwide)
+        }
+        performSegue(withIdentifier: "showQuiz", sender: nil)
     }
 }

@@ -74,7 +74,6 @@
                                 <connections>
                                     <outlet property="countryName" destination="1ZK-mL-qzp" id="MdQ-bE-t3o"/>
                                     <outlet property="imageView" destination="670-Mz-JMA" id="ji8-pg-Q5V"/>
-                                    <segue destination="Ikz-e5-bBi" kind="show" id="yxk-OK-1Va"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -84,6 +83,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Regions" id="mwM-U6-HYZ"/>
+                    <connections>
+                        <segue destination="Ikz-e5-bBi" kind="show" identifier="showQuiz" id="DJA-Lb-hDV"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFd-og-A3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,6 +192,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ifb-ly-UkU"/>
+                    <connections>
+                        <outlet property="imageView" destination="ysz-Ac-XcE" id="kM7-im-k9O"/>
+                        <outletCollection property="flagButtons" destination="HGQ-hG-EEl" collectionClass="NSMutableArray" id="G1o-qQ-W60"/>
+                        <outletCollection property="flagButtons" destination="W6s-X3-KDs" collectionClass="NSMutableArray" id="glQ-7c-gck"/>
+                        <outletCollection property="flagButtons" destination="JKs-i2-WqC" collectionClass="NSMutableArray" id="fMP-Me-Ynk"/>
+                        <outletCollection property="flagButtons" destination="2PX-Xo-t7F" collectionClass="NSMutableArray" id="ZhJ-1P-NHf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9sm-5i-Ad0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

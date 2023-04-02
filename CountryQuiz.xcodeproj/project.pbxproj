@@ -637,9 +637,9 @@
 			children = (
 				8030CC5B29D7FD0A0096FCA2 /* TabBarController.swift */,
 				8030CC5D29D80B5E0096FCA2 /* RegionsCollectionViewController.swift */,
+				8030CC6329D80E540096FCA2 /* QuizViewController.swift */,
 				8030CC5F29D80BB80096FCA2 /* RegionListViewController.swift */,
 				8030CC6129D80E1D0096FCA2 /* RecordListViewController.swift */,
-				8030CC6329D80E540096FCA2 /* QuizViewController.swift */,
 				8030CC6529D80E7D0096FCA2 /* CountryInfoViewController.swift */,
 				8030D36429D816EB0096FCA2 /* CollectionViewController.swift */,
 			);
