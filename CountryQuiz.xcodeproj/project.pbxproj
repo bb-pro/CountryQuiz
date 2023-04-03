@@ -275,6 +275,7 @@
 		8030D35F29D813F00096FCA2 /* vu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8030D26129D813EF0096FCA2 /* vu.png */; };
 		8030D36029D813F00096FCA2 /* tj.png in Resources */ = {isa = PBXBuildFile; fileRef = 8030D26229D813EF0096FCA2 /* tj.png */; };
 		8030D36329D8151F0096FCA2 /* RegionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030D36229D8151F0096FCA2 /* RegionsCollectionViewCell.swift */; };
+		80D7477229DAE2E200CA4F28 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 80D7477129DAE2E200CA4F28 /* Kingfisher */; };
 		80F9A17C29D84620009DA625 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = 80F9A17B29D84620009DA625 /* all.json */; };
 /* End PBXBuildFile section */
 
@@ -557,6 +558,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D7477229DAE2E200CA4F28 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -945,6 +947,9 @@
 			dependencies = (
 			);
 			name = CountryQuiz;
+			packageProductDependencies = (
+				80D7477129DAE2E200CA4F28 /* Kingfisher */,
+			);
 			productName = CountryQuiz;
 			productReference = 8030CC4029D7F9AE0096FCA2 /* CountryQuiz.app */;
 			productType = "com.apple.product-type.application";
@@ -973,6 +978,9 @@
 				Base,
 			);
 			mainGroup = 8030CC3729D7F9AE0096FCA2;
+			packageReferences = (
+				80D7477029DAE2E200CA4F28 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 8030CC4129D7F9AE0096FCA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1497,6 +1505,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		80D7477029DAE2E200CA4F28 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		80D7477129DAE2E200CA4F28 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80D7477029DAE2E200CA4F28 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8030CC3829D7F9AE0096FCA2 /* Project object */;
 }

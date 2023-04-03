@@ -9,22 +9,15 @@ import UIKit
 
 final class RegionListViewController: UITableViewController {
     private let networkManager = NetworkManager.shared
-    var flags: [Flag] = []
+    var countries: [Country] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateData()
+        countries = networkManager.getData(for: .Worldwide)
     }
 }
 
 //MARK: - Private Methods
 extension RegionListViewController {
-    func updateData() {
-        let countries = networkManager.getData(for: .Worldwide)
-        countries.forEach { country in
-            flags.append(
-                Flag(name: country.name,code: country.alpha2Code.lowercased()))
-        }
-    }
 }
 
 // MARK: - Table view data source
@@ -37,20 +30,23 @@ extension RegionListViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        flags.count
+        countries.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "countryCell", for: indexPath)
+        let countryName = countries[indexPath.row].name
+        let code = countries[indexPath.row].alpha2Code.lowercased()
         var content = cell.defaultContentConfiguration()
-        let flag = flags[indexPath.row]
-        content.text = flag.name
-        content.image = UIImage(named: flag.code)
+        content.text = countryName
+        content.image = UIImage(named: code)
+        content.imageProperties.maximumSize.width = 60
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
+
         cell.contentConfiguration = content
         return cell
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         60
     }
-
 }
