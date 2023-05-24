@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,10 +15,14 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="se9-Gs-mNA" customClass="TabBarController" customModule="CountryQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MzD-jf-SCa">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="MzD-jf-SCa">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="background"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" name="background"/>
+                        </tabBarAppearance>
                     </tabBar>
                     <connections>
                         <segue destination="TaW-A5-z78" kind="relationship" relationship="viewControllers" id="iKh-G5-cYf"/>
@@ -35,9 +40,9 @@
             <objects>
                 <collectionViewController id="Q1y-xX-bTB" customClass="RegionsCollectionViewController" customModule="CountryQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="LKC-aY-jgr">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="849"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="background"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="spO-4z-rX0">
                             <size key="itemSize" width="160" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -52,16 +57,18 @@
                                     <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uz.png" translatesAutoresizingMaskIntoConstraints="NO" id="670-Mz-JMA">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uz" translatesAutoresizingMaskIntoConstraints="NO" id="670-Mz-JMA">
                                             <rect key="frame" x="0.0" y="0.0" width="160" height="163"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsI-kd-YM2">
                                             <rect key="frame" x="0.0" y="179" width="160" height="21"/>
                                             <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </view>
+                                <color key="backgroundColor" name="background"/>
                                 <constraints>
                                     <constraint firstItem="670-Mz-JMA" firstAttribute="leading" secondItem="d57-gz-wa7" secondAttribute="leading" id="P1g-HN-VjB"/>
                                     <constraint firstItem="WsI-kd-YM2" firstAttribute="leading" secondItem="d57-gz-wa7" secondAttribute="leading" id="Raz-xV-Qd3"/>
@@ -92,14 +99,14 @@
             </objects>
             <point key="canvasLocation" x="2274" y="-1049"/>
         </scene>
-        <!--Region List View Controller-->
+        <!--Countries-->
         <scene sceneID="JcB-U6-yzY">
             <objects>
                 <tableViewController id="alJ-lS-BN0" customClass="RegionListViewController" customModule="CountryQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="6uu-fn-1gz">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="849"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="background"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="countryCell" textLabel="H8p-ud-SKq" style="IBUITableViewCellStyleDefault" id="I4K-yM-Rqv" customClass="CountryCell">
                                 <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
@@ -112,11 +119,12 @@
                                             <rect key="frame" x="20" y="0.0" width="390" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" name="background"/>
                                 <connections>
                                     <segue destination="fbg-jY-gv9" kind="show" id="s7P-sd-skd"/>
                                 </connections>
@@ -127,7 +135,7 @@
                             <outlet property="delegate" destination="alJ-lS-BN0" id="8tp-PW-AVr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="XEX-Pn-u9e"/>
+                    <navigationItem key="navigationItem" title="Countries" id="XEX-Pn-u9e"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5eP-20-wyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,7 +146,7 @@
             <objects>
                 <viewController id="fbg-jY-gv9" customClass="CountryInfoViewController" customModule="CountryQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uUJ-Tq-CFX">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="849"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="uFd-64-0gt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -154,11 +162,11 @@
             <objects>
                 <viewController id="Ikz-e5-bBi" customClass="QuizViewController" customModule="CountryQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z1W-ZL-Cta">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="849"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hUC-29-DM0">
-                                <rect key="frame" x="50" y="205" width="330" height="594"/>
+                                <rect key="frame" x="50" y="153" width="330" height="646"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PzF-4p-snY">
                                         <rect key="frame" x="84.333333333333357" y="0.0" width="161.66666666666663" height="64.666666666666671"/>
@@ -218,14 +226,14 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uz.png" translatesAutoresizingMaskIntoConstraints="NO" id="ysz-Ac-XcE">
-                                        <rect key="frame" x="0.0" y="69.666666666666686" width="330" height="261"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uz" translatesAutoresizingMaskIntoConstraints="NO" id="ysz-Ac-XcE">
+                                        <rect key="frame" x="0.0" y="69.666666666666643" width="330" height="176.33333333333337"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RAv-su-cTI">
-                                        <rect key="frame" x="0.0" y="335.66666666666663" width="330" height="258.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="251" width="330" height="395"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGQ-hG-EEl">
-                                                <rect key="frame" x="0.0" y="0.0" width="330" height="57"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="330" height="91"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -234,7 +242,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6s-X3-KDs">
-                                                <rect key="frame" x="0.0" y="67" width="330" height="57"/>
+                                                <rect key="frame" x="0.0" y="101" width="330" height="91.333333333333314"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -243,7 +251,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKs-i2-WqC">
-                                                <rect key="frame" x="0.0" y="134" width="330" height="57.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="202.33333333333337" width="330" height="91.333333333333314"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -252,7 +260,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PX-Xo-t7F">
-                                                <rect key="frame" x="0.0" y="201.33333333333337" width="330" height="57"/>
+                                                <rect key="frame" x="0.0" y="303.66666666666663" width="330" height="91.333333333333314"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -270,11 +278,11 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ePV-Zs-8il"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="background"/>
                         <constraints>
                             <constraint firstItem="hUC-29-DM0" firstAttribute="top" secondItem="ePV-Zs-8il" secondAttribute="top" constant="50" id="9IE-SB-wzZ"/>
-                            <constraint firstItem="ysz-Ac-XcE" firstAttribute="height" secondItem="z1W-ZL-Cta" secondAttribute="height" multiplier="0.28" id="MG8-7J-qjd"/>
                             <constraint firstItem="ePV-Zs-8il" firstAttribute="trailing" secondItem="hUC-29-DM0" secondAttribute="trailing" constant="50" id="ONh-9X-P4R"/>
+                            <constraint firstItem="ysz-Ac-XcE" firstAttribute="height" secondItem="z1W-ZL-Cta" secondAttribute="height" multiplier="0.207511" id="X3R-YM-akL"/>
                             <constraint firstItem="ePV-Zs-8il" firstAttribute="bottom" secondItem="hUC-29-DM0" secondAttribute="bottom" constant="50" id="kp5-J2-kdq"/>
                             <constraint firstItem="hUC-29-DM0" firstAttribute="leading" secondItem="ePV-Zs-8il" secondAttribute="leading" constant="50" id="wlt-Mu-uLx"/>
                         </constraints>
@@ -303,7 +311,7 @@
             <objects>
                 <viewController id="PA7-VW-Gxb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wqs-kH-WMY">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="849"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="iEw-pz-ZWx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -319,7 +327,7 @@
             <objects>
                 <tableViewController id="3bb-c8-jwo" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="bBs-ZX-olX">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="849"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -352,6 +360,16 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GKO-E2-TVe">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="background"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" name="background"/>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -368,9 +386,15 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TaW-A5-z78" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Flag Quiz" image="globe.central.south.asia.fill" catalog="system" id="Zjp-EG-kog"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="uhN-L2-bUB">
-                        <rect key="frame" x="0.0" y="59" width="430" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uhN-L2-bUB">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" name="background"/>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -388,7 +412,10 @@
         <image name="globe.central.south.asia.fill" catalog="system" width="128" height="123"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="medal" catalog="system" width="121" height="128"/>
-        <image name="uz.png" width="2560" height="1280"/>
+        <image name="uz" width="480" height="240"/>
+        <namedColor name="background">
+            <color red="0.27434462310000002" green="0.27448874709999999" blue="0.27891674640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

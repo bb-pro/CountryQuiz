@@ -50,7 +50,7 @@ extension RegionListViewController {
         let code = flags[indexPath.row].code
         var content = cell.defaultContentConfiguration()
         content.text = countryName
-        
+        content.image = UIImage(named: code)
         content.imageProperties.maximumSize.width = 60
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
 
