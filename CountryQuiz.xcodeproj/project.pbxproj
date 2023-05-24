@@ -276,7 +276,7 @@
 		8030D36029D813F00096FCA2 /* tj.png in Resources */ = {isa = PBXBuildFile; fileRef = 8030D26229D813EF0096FCA2 /* tj.png */; };
 		8030D36329D8151F0096FCA2 /* RegionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030D36229D8151F0096FCA2 /* RegionsCollectionViewCell.swift */; };
 		80D7477229DAE2E200CA4F28 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 80D7477129DAE2E200CA4F28 /* Kingfisher */; };
-		80F9A17C29D84620009DA625 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = 80F9A17B29D84620009DA625 /* all.json */; };
+		80E7B5772A1E7212002860E3 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = 80E7B5762A1E7211002860E3 /* all.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -550,7 +550,7 @@
 		8030D26129D813EF0096FCA2 /* vu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vu.png; sourceTree = "<group>"; };
 		8030D26229D813EF0096FCA2 /* tj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tj.png; sourceTree = "<group>"; };
 		8030D36229D8151F0096FCA2 /* RegionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsCollectionViewCell.swift; sourceTree = "<group>"; };
-		80F9A17B29D84620009DA625 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = all.json; path = ../../../../../../.Trash/all.json; sourceTree = "<group>"; };
+		80E7B5762A1E7211002860E3 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -648,7 +648,7 @@
 		8030CC6729D812690096FCA2 /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
-				80F9A17B29D84620009DA625 /* all.json */,
+				80E7B5762A1E7211002860E3 /* all.json */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -1006,7 +1006,6 @@
 				8030D29F29D813EF0096FCA2 /* bo.png in Resources */,
 				8030D2D529D813EF0096FCA2 /* sr.png in Resources */,
 				8030D34D29D813F00096FCA2 /* va.png in Resources */,
-				80F9A17C29D84620009DA625 /* all.json in Resources */,
 				8030D31229D813F00096FCA2 /* gb-eng.png in Resources */,
 				8030D35C29D813F00096FCA2 /* za.png in Resources */,
 				8030D35F29D813F00096FCA2 /* vu.png in Resources */,
@@ -1047,6 +1046,7 @@
 				8030D26B29D813EF0096FCA2 /* cy.png in Resources */,
 				8030D33C29D813F00096FCA2 /* tl.png in Resources */,
 				8030D33B29D813F00096FCA2 /* my.png in Resources */,
+				80E7B5772A1E7212002860E3 /* all.json in Resources */,
 				8030D33729D813F00096FCA2 /* az.png in Resources */,
 				8030D2B629D813EF0096FCA2 /* gb-nir.png in Resources */,
 				8030D2D729D813EF0096FCA2 /* jp.png in Resources */,

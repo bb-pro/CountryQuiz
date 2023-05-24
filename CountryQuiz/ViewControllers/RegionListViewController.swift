@@ -10,14 +10,25 @@ import UIKit
 final class RegionListViewController: UITableViewController {
     private let networkManager = NetworkManager.shared
     var countries: [Country] = []
+    var flags: [Flag] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        countries = networkManager.getData(for: .Worldwide)
+        updateData()
     }
 }
 
 //MARK: - Private Methods
 extension RegionListViewController {
+    private func updateData() {
+        countries = networkManager.getData(for: .Worldwide)
+        
+        updateFlagData()
+    }
+    private func updateFlagData(){
+        countries.forEach { country in
+            flags.append(Flag(name: country.name, code: country.alpha2Code.lowercased()))
+        }
+    }
 }
 
 // MARK: - Table view data source
@@ -35,11 +46,11 @@ extension RegionListViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "countryCell", for: indexPath)
-        let countryName = countries[indexPath.row].name
-        let code = countries[indexPath.row].alpha2Code.lowercased()
+        let countryName = flags[indexPath.row].name
+        let code = flags[indexPath.row].code
         var content = cell.defaultContentConfiguration()
         content.text = countryName
-        content.image = UIImage(named: code)
+        
         content.imageProperties.maximumSize.width = 60
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
 
