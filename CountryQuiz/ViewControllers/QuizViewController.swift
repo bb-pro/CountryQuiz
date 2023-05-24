@@ -41,6 +41,7 @@ final class QuizViewController: UIViewController {
 //MARK: - Private Methods
 private extension QuizViewController {
     @objc func updateUI() {
+        imageView.layer.cornerRadius = 15
         var answerOptions: [Country] = []
         //Getting random country data to display on the screen
         

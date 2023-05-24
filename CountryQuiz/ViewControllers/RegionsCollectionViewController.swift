@@ -44,11 +44,10 @@ extension RegionsCollectionViewController {
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: reuseIdentifier,
             for: indexPath) as! RegionsCollectionViewCell
-    
         let region = regions[indexPath.item]
         cell.imageView.image = UIImage(named: region.rawValue)
+        cell.imageView.layer.cornerRadius = 15
         cell.countryName.text = region.rawValue
-    
         return cell
     }
 }

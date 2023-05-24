@@ -11,4 +11,5 @@ import UIKit
 final class RegionsCollectionViewCell: UICollectionViewCell {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var countryName: UILabel!
+    
 }

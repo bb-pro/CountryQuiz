@@ -218,7 +218,7 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uz.png" translatesAutoresizingMaskIntoConstraints="NO" id="ysz-Ac-XcE">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uz.png" translatesAutoresizingMaskIntoConstraints="NO" id="ysz-Ac-XcE">
                                         <rect key="frame" x="0.0" y="69.666666666666686" width="330" height="261"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RAv-su-cTI">
@@ -270,7 +270,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ePV-Zs-8il"/>
-                        <color key="backgroundColor" red="0.65178334709999997" green="0.63310688729999998" blue="0.51609808209999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hUC-29-DM0" firstAttribute="top" secondItem="ePV-Zs-8il" secondAttribute="top" constant="50" id="9IE-SB-wzZ"/>
                             <constraint firstItem="ysz-Ac-XcE" firstAttribute="height" secondItem="z1W-ZL-Cta" secondAttribute="height" multiplier="0.28" id="MG8-7J-qjd"/>
