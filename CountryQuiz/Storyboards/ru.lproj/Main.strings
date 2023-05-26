@@ -1,0 +1,66 @@
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "2PX-Xo-t7F"; */
+"2PX-Xo-t7F.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2PX-Xo-t7F"; */
+"2PX-Xo-t7F.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "77b-D7-mSO"; */
+"77b-D7-mSO.text" = "Detail";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9sy-FC-Cq1"; */
+"9sy-FC-Cq1.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "HGQ-hG-EEl"; */
+"HGQ-hG-EEl.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HGQ-hG-EEl"; */
+"HGQ-hG-EEl.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Score"; ObjectID = "I4k-Uw-hTJ"; */
+"I4k-Uw-hTJ.text" = "Score";
+
+/* Class = "UITabBarItem"; title = "Records"; ObjectID = "J3C-fu-x62"; */
+"J3C-fu-x62.title" = "Records";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "JKs-i2-WqC"; */
+"JKs-i2-WqC.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JKs-i2-WqC"; */
+"JKs-i2-WqC.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Countries"; ObjectID = "Nwc-oe-4t9"; */
+"Nwc-oe-4t9.title" = "Countries";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "W6s-X3-KDs"; */
+"W6s-X3-KDs.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "W6s-X3-KDs"; */
+"W6s-X3-KDs.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "WsI-kd-YM2"; */
+"WsI-kd-YM2.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Countries"; ObjectID = "XEX-Pn-u9e"; */
+"XEX-Pn-u9e.title" = "Countries";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "YJ6-RF-EuJ"; */
+"YJ6-RF-EuJ.title" = "Settings";
+
+/* Class = "UITabBarItem"; title = "Flag Quiz"; ObjectID = "Zjp-EG-kog"; */
+"Zjp-EG-kog.title" = "Flag Quiz";
+
+/* Class = "UINavigationItem"; title = "Guess the Flag"; ObjectID = "ifb-ly-UkU"; */
+"ifb-ly-UkU.title" = "Guess the Flag";
+
+/* Class = "UINavigationItem"; title = "Choose a region"; ObjectID = "mwM-U6-HYZ"; */
+"mwM-U6-HYZ.title" = "Choose a region";
+
+/* Class = "UILabel"; text = "Hearts: "; ObjectID = "q8c-m9-QkL"; */
+"q8c-m9-QkL.text" = "Hearts: ";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "vSE-7z-lYh"; */
+"vSE-7z-lYh.text" = "0";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "zBE-Jc-KYP"; */
+"zBE-Jc-KYP.text" = "Title";
