@@ -13,6 +13,7 @@ final class RegionListViewController: UITableViewController {
     var flags: [Flag] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Countries"
         updateData()
     }
 }
@@ -28,6 +29,11 @@ extension RegionListViewController {
         countries.forEach { country in
             flags.append(Flag(name: country.name, code: country.alpha2Code.lowercased()))
         }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailVC = segue.destination as? CountryInfoViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        detailVC.flag = flags[indexPath.row]
     }
 }
 
@@ -45,19 +51,23 @@ extension RegionListViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "countryCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "countryCell", for: indexPath) as! CountryCell
         let countryName = flags[indexPath.row].name
         let code = flags[indexPath.row].code
-        var content = cell.defaultContentConfiguration()
-        content.text = countryName
-        content.image = UIImage(named: code)
-        content.imageProperties.maximumSize.width = 60
-        content.imageProperties.cornerRadius = tableView.rowHeight / 2
-
-        cell.contentConfiguration = content
+        cell.countryName.textColor = .white
+        cell.countryName.text = countryName
+        cell.flagImage.image = UIImage(named: code)
+        cell.flagImage.layer.cornerRadius = 10
         return cell
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         60
+    }
+}
+
+//MARK: - UI Table View Delegate
+extension RegionListViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

@@ -21,6 +21,7 @@
 		8030CC6429D80E540096FCA2 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030CC6329D80E540096FCA2 /* QuizViewController.swift */; };
 		8030CC6629D80E7D0096FCA2 /* CountryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030CC6529D80E7D0096FCA2 /* CountryInfoViewController.swift */; };
 		8030D36329D8151F0096FCA2 /* RegionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030D36229D8151F0096FCA2 /* RegionsCollectionViewCell.swift */; };
+		807C4F9C2A1F37C80030E093 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C4F9B2A1F37C80030E093 /* CountryCell.swift */; };
 		80D7477229DAE2E200CA4F28 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 80D7477129DAE2E200CA4F28 /* Kingfisher */; };
 		80E7B5772A1E7212002860E3 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = 80E7B5762A1E7211002860E3 /* all.json */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		8030CC6329D80E540096FCA2 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		8030CC6529D80E7D0096FCA2 /* CountryInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoViewController.swift; sourceTree = "<group>"; };
 		8030D36229D8151F0096FCA2 /* RegionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsCollectionViewCell.swift; sourceTree = "<group>"; };
+		807C4F9B2A1F37C80030E093 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		80E7B5762A1E7211002860E3 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,8 +132,8 @@
 				8030CC5D29D80B5E0096FCA2 /* RegionsCollectionViewController.swift */,
 				8030CC6329D80E540096FCA2 /* QuizViewController.swift */,
 				8030CC5F29D80BB80096FCA2 /* RegionListViewController.swift */,
-				8030CC6129D80E1D0096FCA2 /* RecordListViewController.swift */,
 				8030CC6529D80E7D0096FCA2 /* CountryInfoViewController.swift */,
+				8030CC6129D80E1D0096FCA2 /* RecordListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				8030D36229D8151F0096FCA2 /* RegionsCollectionViewCell.swift */,
+				807C4F9B2A1F37C80030E093 /* CountryCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				8030D36329D8151F0096FCA2 /* RegionsCollectionViewCell.swift in Sources */,
 				802A360E29D81876001E9EC6 /* Country.swift in Sources */,
 				8030CC4429D7F9AE0096FCA2 /* AppDelegate.swift in Sources */,
+				807C4F9C2A1F37C80030E093 /* CountryCell.swift in Sources */,
 				8030CC6029D80BB80096FCA2 /* RegionListViewController.swift in Sources */,
 				8030CC5E29D80B5E0096FCA2 /* RegionsCollectionViewController.swift in Sources */,
 				8030CC4629D7F9AE0096FCA2 /* SceneDelegate.swift in Sources */,
