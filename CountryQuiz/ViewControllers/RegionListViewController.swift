@@ -33,7 +33,7 @@ extension RegionListViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailVC = segue.destination as? CountryInfoViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        detailVC.flag = flags[indexPath.row]
+        detailVC.country = countries[indexPath.row]
     }
 }
 
